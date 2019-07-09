@@ -123,7 +123,7 @@ class Game():
 		self.fungus.score=((self.frame_list[0]==3).sum()-(self.frame_list[-1]==3).sum()+10)/((self.frame_list[-1]== 1).sum()+10)
 		return self.n_iter		
 
-	def play_green_is_life(self,max_n_iter=10000,die_fac=1000):
+	def play_green_is_life(self,max_n_iter=10000,die_fac=100):
 		s=self.frame_list[-1].shape
 		mass_integrator=0
 		score=0
